@@ -16,11 +16,7 @@
 			loadFont('OpenSans', 'fonts/avenirnextcyr-light.css');
 			loadFont('OpenSans', 'fonts/OpenSans-Semibold.css');
 		</script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/media.css">
+		<link href="styles/main.css" rel="stylesheet">
 	</head>
 	<body class="body">
 		<div id="wrapper" class="wrapper">
@@ -468,264 +464,124 @@
 						</div>
 					</div>
 				</div>
-				
-
-
-				<section class="section v1_mod full-width-bg">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">подбор автостекол</h2>
-
-						<div class="select-block-first-line">
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Марка:</p>
-								<select class="form-control">
-								  <option value="volvo">Volvo</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Модель:</p>
-								<select class="form-control" disabled> 
-								  <option value="volvo">A6 Allroad</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Поколение:</p>
-								<select class="form-control">
-								  <option value="volvo">2008 – 2012 C6 рестайл</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Тип кузова:</p>
-								<select class="form-control">
-								  <option value="volvo">Не выбрано</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-						</div>
-						<div class="select-block-bg">
-							<div class="check-box-container">
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check15" ><label for="check15">Лобовое стекло</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check1"><label for="check1">Датчики дождя / света</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check2"><label for="check2">Места под датчики</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check3"><label for="check3">Камеры</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check4"><label for="check4">Обогрев</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check5"><label for="check5">Антенна</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check6"><label for="check6">Окнопод VIN</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check16" ><label for="check16">Заднее стекло</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check7"><label for="check7" >Обогрев</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check8"><label for="check8" >Антенна</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check17" ><label for="check17">Боковые стекла</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check9"><label for="check9" >Опускные</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check10"><label for="check10" >Корпусные</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check11"><label for="check11">Переднее</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check12"><label for="check12">Заднее</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check13"><label for="check13">Левое</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check14"><label for="check14">Правое</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 "><ul>
-										<li><br></li>
-										<div class="select-block-devider"></div>
-										<li></li>
-										
-									</ul></div>
-								
-							</div>
-							
-						</div>
-						<div class="col-md-12">
-									<a href="#" class="m-page-btn btn-padding-left">Подобрать</a>
-								</div>
+				<div class="section v1_mod">
+					<div style="height: 340px;" class="container">
+						<center>
+							<p class="main-h1">Отзывы наших клиентов</p>
+						</center>
+						<script type="text/javascript" src="//dev.mneniya.pro/js/carglassru/mneniyafeed.js"></script>
+						<div id="mneniyapro_feed" style="height: 200px !important; overflow: hidden;"><a href="http://mneniya.pro/">Mneniya.Pro</a></div>
+						<center><a href="/otzyvy" style="font-size: 1.3em;line-height: 2em;" class="btn">Посмотреть все отзывы</a></center>
 					</div>
-
-					<div class="clearfix"></div>
-				</section>
-
-
+				</div>
 				<section class="section v1_mod">
 					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">подбор автостекол</h2>
-						<div class="row">
-  <div class="btn-group btn-group-justified">
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car-tablet">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="btn-group btn-group-justified">
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car-tablet">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-  </div>
-</div>
-<div class="cat-btn-container">
-	<a href="#" class="cat-btn">Весь каталог</a>
-</div>
-					</div>
-				</section>
-
-
-<section class="section v1_mod">
-	<div class="container">
-		<div class="col-md-6 m-page-change">
-			<img src="i/broken-glass.png" alt="broken-glass">
-			<h3>ЗАМЕНА</h3>
-		</div>
-		<div class="col-md-6 m-page-repair">
-			<div class="repair-content">
-				<img src="i/split-glass.png" alt="split glass">
-				<h3>РЕМОНТ</h3>
-				<p>
-					Carglass® использует инновационное оборудование и современные высокопрочные полимеры, применяемые Carglass® во всем мире. <br><br>
-
-Полное восстановление структурной прочности стекла гарантирует безопасность вождения транспортного средства.<br><br>
-
-Полимерный состав, используемый для ремонта автостекла, имеет одинаковый с ним коэффициент преломления. Благодаря тщательной полировке зона ремонта практически незаметна.
-				</p>
-				<div class="repait-content__btn">
-					<a href="#">Подробнее</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section v1_mod">
-	<div class="container">
-		<h2 class="headline v3_mod black_mod block-tittle">Отзывы наших клиентов</h2>
-		<div style="height: 280px;" class="container">
-			
-						<script type="text/javascript" src="//dev.mneniya.pro/js/carglassru/mneniyafeed.js"></script>
-						<div class="col-md-3 hidden-sm hidden-xs"><img src="i/Paul_Heroes_Pose_01.png" alt=""></div>
-						<div id="mneniyapro_feed" class="col-md-9 col-sm-12" style="height: 230px !important;overflow: hidden;"><a href="http://mneniya.pro/">Mneniya.Pro</a></div>
-
-					</div>
-<center><a href="/otzyvy" class="otzyvy-btn-link" style="font-size: 1.3em;line-height: 2em;" class="btn">Посмотреть все отзывы</a></center>
-					<div class="clearfix"></div>
-	</div>
-</section>
-
-
-<section class="section v1_mod">
-	<div class="container">
-		<h2 class="headline v3_mod black_mod block-tittle">Некоторые из наших преимуществ</h2>
-		<div class="benefit-center">
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Временное ПВХ-стекло</p>
-				<div class="benefits-text">Если на складе не оказалось нужной модели бокового стекла, установка временного ПВХ-стекла выполняется в день подачи заявки.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><i class="material-icons">account_balance</i></div>
-				<p class="benefits-tittle">Гарантия</p>
-				<div class="benefits-text">Ремонт и замена стекла в автосервисе Carglass® не влияют на условия гарантии производителя авто.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items without-margin">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Пользуйтесь авто через час</p>
-				<div class="benefits-text">Замена автостекла выполняется по европейской технологии с помощью «одночасового» клея. Через час после замены Вы уже можете пользоваться автомобилем.</div>
-			</div>
-		
-
-			<div class="col-md-4 col-sm-6 col-xs-12  benefits__items">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Эксклюзивость</p>
-				<div class="benefits-text">Эксклюзивные технологии и оборудование Carglass®</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><i class="material-icons">account_balance</i></div>
-				<p class="benefits-tittle">Ремонт за 30 минут</p>
-				<div class="benefits-text">Ремонт скола лобового стекла выполняется в день обращения за 30 минут.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items without-margin">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Качество</p>
-				<div class="benefits-text">На выполненные работы предоставляется 10 лет гарантии.</div>
-			</div>
-		
-	</div>
-	</div>
-</section>
-
-<section class="section v2_mod">
-					<div class="container">
-						<ul class="about_us_list">
-							<li class="about_us_l_item video_mod">
-								<div id="showVideo" class="about_us_l_block video_mod"><img src="i/about_us.jpg" alt="" class="about_us_i"></div>
+						<h2 class="headline v3_mod">Некоторые из наших преимуществ</h2>
+						<ul class="advantages_list">
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline pvh_temp_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">Если на складе не оказалось нужной модели бокового стекла, бесплатная установка временного ПВХ-стекла выполняется в день подачи заявки.</div>
+								</div>
 							</li>
-
-							<li class="about_us_l_item">
-								<div class="about_us_l_block desc_mod">
-									<h1 class="video-tittle">Carglass <sup>®</sup></h1>
-									<p>Мы успешная компания, оказывающая высокопрофессиональные услуги по ремонту и замене автостекол для всех моделей и марок современных автомобилей в 34 странах мира. В наших сервисных центрах по всему миру работают свыше 25 000 сотрудников. Являясь подразделением Belron® Group – мирового лидера в сфере ремонта и замены автомобильных стекол, мы ежегодно обслуживаем более 10 миллионов клиентов. Мы пришли в Россию с целью стать «естественным выбором №1».</p>
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline car_warranty_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">Ремонт и замена стекла в автосервисе Carglass® не влияют на условия гарантии производителя авто.</div>
+								</div>
+							</li>
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline euro_tech_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">Замена автостекла выполняется по европейской технологии с помощью «одночасового» клея. Через час после замены Вы уже можете пользоваться автомобилем.</div>
+								</div>
+							</li>
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline exclusive_tech_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">Эксклюзивные технологии и оборудование Carglass®</div>
+								</div>
+							</li>
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline clock_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">Ремонт скола лобового стекла выполняется в день обращения за 30 минут.</div>
+								</div>
+							</li>
+							<li class="advantages_l_item">
+								<div class="advantages_l_block">
+									
+									<h3 class="advantages_subhline guarantee_mod">Краткое описание преимущества</h3>
+									<div class="advantages_l_b_text">На выполненные работы предоставляется 10 лет гарантии.</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</section>
-
-<section class="section v1_mod">
+				<section class="section our_services_mod">
+					<div id="bgServices" class="bg_img_holder our_services_mod"><img src="i/about_us.jpg" alt="" class="bg_img our_services_mod"></div>
 					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Примеры выполненных работ</h2>
+						<h2 class="headline v3_mod white_mod">Наши услуги</h2>
+						<div class="black_bg_white">Приоритет компании Carglass® – предоставление качественных услуг по ремонту, замене лобовых и любых других автостекол, которые пришли в негодность. Это означает, что Вы можете ожидать исключительный уровень сервиса в любом центре Carglass®.</div>
+						<ul class="services_list">
+							<li class="services_l_item">
+								<div class="services_block">
+									<div class="services_b_title breach_mod">Замена</div>
+									<ul class="services_b_list">
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">Carglass® использует инновационное оборудование и современные высокопрочные полимеры, применяемые Carglass® во всем мире.</div>
+										</li>
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">Полное восстановление структурной прочности стекла гарантирует безопасность вождения транспортного средства.</div>
+										</li>
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">Полимерный состав, используемый для ремонта автостекол, имеет одинаковый с ним коэффициент преломления. Благодаря тщательной полировке зона ремонта практически незаметна.</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="services_l_item">
+								<div class="services_block">
+									<div class="services_b_title split_mod">Ремонт</div>
+									<ul class="services_b_list">
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">Замена стекол в автосервисе Carglass® выполняется опытным персоналом с использованием специализированного оборудования, обеспечивающего высокую точность установки.</div>
+										</li>
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">После подачи заявки выполняется предварительный подбор необходимого стекла в зависимости от марки авто, комплектации и года выпуска.</div>
+										</li>
+										<li class="services_b_l_item">
+											<div class="services_b_l_block">Carglass® сотрудничает с производителями и поставщиками сертифицированной продукции. Мы предлагаем установку оригинальных стекол в автосервисе по цене, соответствующей качеству работ.</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section v2_mod">
+					<div class="container">
+						<ul class="about_us_list">
+							<li class="about_us_l_item video_mod">
+								<div id="showVideo" class="about_us_l_block video_mod"><img src="i/about_us.jpg" alt="" class="about_us_i"></div>
+							</li>
+							<li class="about_us_l_item">
+								<div class="about_us_l_block desc_mod">
+									<h2 class="headline v3_mod">О нас</h2>
+									<p>Carglass - успешная компания, оказывающая высокопрофессиональные услуги по ремонту и замене автостекол для всех моделей и марок современных автомобилей в 34 странах мира. В наших сервисных центрах по всему миру работают свыше 25 000 сотрудников. Являясь подразделением Belron® Group – мирового лидера в сфере ремонта и замены автомобильных стекол, мы ежегодно обслуживаем более 10 миллионов клиентов. Мы пришли в Россию с целью стать «естественным выбором №1» при замене или ремонте автостекол.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section v4_mod">
+					<div class="container">
+						<h2 class="headline v3_mod white_mod">Примеры выполненных работ</h2>
 						<ul class="portfolio_list">
 							<li class="portfolio_l_item v1_mod stamp stamp_v1_mod">
 								<div class="portfolio_block"><img src="i/portfolio/13.jpg" alt="" class="portfolio_i"></div>
@@ -746,7 +602,7 @@
 								<div class="portfolio_block v1_mod"><img src="i/portfolio/36_prev.jpg" alt="" class="portfolio_i"></div>
 							</li>
 						</ul>
-						<div class="btn_group_list v1_mod repait-content__btn"><a href="" ><span>Найти ближайший центр</span></a></div>
+						<div class="btn_group_list v1_mod"><a href="" class="btn btn_find_closest btn_yellow_mod"><span>Найти ближайший центр</span></a></div>
 						<div id="modalPortfolio" class="lightbox center_mod">
 							<div class="swiper-container portfolio_container">
 								<div class="portfolio_lightbox_list swiper-wrapper">
@@ -813,34 +669,8 @@
 						</div>
 					</div>
 				</section>
-
-		<section class="section v1_mod">
+				<section class="section v1_mod">
 					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">ПОПУЛЯРНЫЕ БРЕНДЫ АВТОСТЕКОЛ</h2>
-						<div class="glass-brends-1">
-							<div class="col-md-2 сol-sm-3"><a href="#">AGC </a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">Nippon Glass</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">FYG</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">GUARDIAN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">PILKINGTON</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">SEKURIT SAINT-GOBAIN</a></div>
-						</div>
-						<div class="glass-brends-2">
-							<div class="col-md-2 сol-sm-3"><a href="#">GUARDIAN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">SEKURIT SAINT-GOBAIN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">PILKINGTON</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">AGC</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">FYG</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">Nippon Glass</a></div>
-						</div>
-					</div>
-		</section>
-
-
-
-<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Новости</h2>
 						<div class="news_msnry_wrap">
 							<ul class="news_msnry_list">
 								<li class="news_msnry_l_item v1_mod"><a href="" class="news_msnry_block v1_mod blue_mod">
@@ -883,64 +713,32 @@
 						</div>
 					</div>
 				</section>
-
-
 				<section class="section v1_mod">
 					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Мы всегда рады помочь Вам</h2>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">ДТП</p>
-								<p class="rdy-help-text">Вы попали в ДТП, и лобовое стекло автомобиля пострадало.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Некачественное
-дорожное покрытие</p>
-								<p class="rdy-help-text">Лобовое стекло Вашего автомобиля пострадало от некачественного дорожного покрытия: на лобовом стекле Вашего автомобиля образовался скол или трещина. Мы произведем ремонт скола лобового стекла в день обращения.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Хулиганство</p>
-								<p class="rdy-help-text">Ваш автомобиль подвергся хулиганскому нападению: специалисты Carglass® заменят боковое стекло Вашего автомобиля или предложат установить «временное стекло» из ПВХ в день обращения. У нас возможна установка стекол на автомобили всех марок.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Некачественный ремонт</p>
-								<p class="rdy-help-text">Вы попытались самостоятельно отремонтировать или заменить стекло автомобиля и не добились желаемого результата.</p>
+						<h2 class="headline v3_mod">Мы всегда рады помочь Вам, если:</h2>
+						<div class="content_block v1_mod">
+							<div class="help_img_w"><img src="i/brand.png" alt="" class="help_img"></div>
+							<div class="col">
+								<ul class="help_list">
+									<li class="help_l_item">
+										<div class="help_l_block">Вы попали в ДТП, и лобовое стекло автомобиля пострадало.</div>
+									</li>
+									<li class="help_l_item">
+										<div class="help_l_block">Лобовое стекло Вашего автомобиля пострадало от некачественного дорожного покрытия: на лобовом стекле Вашего автомобиля образовался скол или трещина. Мы произведем ремонт скола лобового стекла в день обращения.</div>
+									</li>
+									<li class="help_l_item">
+										<div class="help_l_block">Ваш автомобиль подвергся хулиганскому нападению: специалисты Carglass® заменят боковое стекло Вашего автомобиля или предложат установить «временное стекло» из ПВХ в день обращения. У нас возможна установка стекол на автомобили всех марок.</div>
+									</li>
+									<li class="help_l_item">
+										<div class="help_l_block">Вы попытались самостоятельно отремонтировать или заменить стекло автомобиля и не добились желаемого результата.</div>
+									</li>
+								</ul>
+								<p>Мы можем отремонтировать или заменить автостекло БЕСПЛАТНО, если Ваш действующий полис КАСКО покрывает повреждения автомобильных стекол. Ремонт автостекла в Carglass® - это неизменно высокое качество, инновационные технологии и беспрецедентные гарантии. Сервисные центры Carglass находятся в Москве, Санкт-Петербурге, Новосибирске, Екатеринбурге, Туле и других городах России.</p>
+								<div class="btn_group_list v2_mod"><a href="" class="btn btn_yellow_mod"><span>Записаться на сервис</span></a></div>
 							</div>
 						</div>
 					</div>
 				</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			</main>
 			<footer class="footer">
 				<div class="footer_row v1_mod">

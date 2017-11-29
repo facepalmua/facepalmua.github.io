@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Главная</title>
+		<title>Блог</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<meta name="description" content="Content">
@@ -16,11 +16,7 @@
 			loadFont('OpenSans', 'fonts/avenirnextcyr-light.css');
 			loadFont('OpenSans', 'fonts/OpenSans-Semibold.css');
 		</script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/media.css">
+		<link href="styles/main.css" rel="stylesheet">
 	</head>
 	<body class="body">
 		<div id="wrapper" class="wrapper">
@@ -396,552 +392,135 @@
 					</div>
 				</div>
 			</header>
-			<main class="main">
-				<div class="slider_main_w swiper-container">
-					<div class="slider_main_list swiper-wrapper">
-						<div class="slider_m_l_item swiper-slide">
-							<div class="slider_m_l_block v1_mod">
-								<div class="slider_b_content v1_mod container">
-									<h2 class="headline v2_mod white_mod">Ремонт и установка автостекла от мирового лидера</h2>
-									<ul class="btn_group_list v1_mod">
-										<li class="btn_grp_l_item v1_mod"><a href="" class="btn btn_repair btn_yellow_mod"> <span>Ремонт</span></a></li>
-										<li class="btn_grp_l_item v1_mod"><a href="" class="btn btn_replacing btn_yellow_mod"> <span>Замена</span></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="slider_m_l_item swiper-slide">
-							<div class="slider_m_l_block v2_mod">
-								<div class="slider_b_content v2_mod container">
-									<div class="slider_m_img_w v1_mod left_mod"><img src="i/slider/Hyundai_Accent_Sedan_1.png" alt="" class="slider_m_img"></div>
-									<div class="slider_col v1_mod">
-										<h2 class="headline v2_mod white_mod">Узнать стоимость автостекла</h2>
-										<div class="slider_text v1_mod">Подбор лобового стекла по марке и модели Вашего авто</div><a href="" class="btn btn_check_price btn_yellow_mod"> <span>Узнать стоимость</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="slider_m_l_item swiper-slide">
-							<div class="slider_m_l_block v3_mod">
-								<div class="slider_b_content v3_mod container">
-									<div class="slider_col v2_mod">
-										<h2 class="headline v2_mod white_mod">Индекс лояльности клиентов 95%</h2>
-										<ul class="star_list v1_mod">
-											<li class="star_l_item v1_mod"><span class="star_l_block v1_mod"></span>
-											</li>
-											<li class="star_l_item v1_mod"><span class="star_l_block v1_mod"></span>
-											</li>
-											<li class="star_l_item v1_mod"><span class="star_l_block v1_mod"></span>
-											</li>
-											<li class="star_l_item v1_mod"><span class="star_l_block v1_mod"></span>
-											</li>
-											<li class="star_l_item v1_mod"><span class="star_l_block v1_mod"></span>
-											</li>
-										</ul><a href="" class="btn btn_see_feedbacks btn_yellow_mod"> <span>Посмотреть отзывы</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="slider_m_l_item swiper-slide">
-							<div class="slider_m_l_block v4_mod">
-								<div class="slider_b_content v1_mod container">
-									<h2 class="headline v2_mod white_mod">Обширная сеть центров по всей России</h2><a href="" class="btn btn_all_serv_centers btn_yellow_mod"> <span>Посмотреть все центры</span></a>
-								</div>
-							</div>
-						</div>
-						<div class="slider_m_l_item swiper-slide">
-							<div class="slider_m_l_block v5_mod">
-								<div class="slider_b_content v5_mod container">
-									<div class="slider_col v1_mod">
-										<h2 class="headline v2_mod black_mod">Карта лояльности</h2>
-										<div class="slider_text v1_mod black_mod">Спрашивайте во всех сервисных центрах</div><a href="" class="btn btn_provenance btn_yellow_mod"> <span>Условия получения</span></a>
-									</div>
-									<div class="slider_m_img_w v2_mod left_mod"><img src="i/slider/card.jpg" alt="" class="slider_m_img"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider_main_btn_row">
-						<div class="slider_main_group">
-							<div class="slider_btn_list btn_group_cells_mod"><span class="slider_btn active_mod"></span><span class="slider_btn"></span><span class="slider_btn"></span><span class="slider_btn"></span><span class="slider_btn"></span></div>
-							<div class="slider_marker slide_1"></div>
-						</div>
-					</div>
-				</div>
+			<script>
+				(function() {
+					function async_load(u,id) {
+						if (!gid(id)) {
+							s="script", d=document,
+							o = d.createElement(s);
+							o.type = 'text/javascript';
+								o.id = id;
+							o.async = true;
+							o.src = u;
+							// Creating scripts on page
+							x = d.getElementsByTagName(s)[0];
+							x.parentNode.insertBefore(o,x);
+						}
+					}
+					function gid (id){
+						return document.getElementById(id);
+					}
+					window.onload = function() {
+					
+						e = gid("s-facebook");
+						e.setAttribute("data-layout", "button_count"); 
+						e.setAttribute("data-send", "false"); 
+					
+						async_load("//connect.facebook.net/ru_RU/all.js#xfbml=1", "id-facebook");
+						async_load("//vk.com/js/api/openapi.js", "id-vkontakte");
+					};
 				
-
-
-				<section class="section v1_mod full-width-bg">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">подбор автостекол</h2>
-
-						<div class="select-block-first-line">
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Марка:</p>
-								<select class="form-control">
-								  <option value="volvo">Volvo</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Модель:</p>
-								<select class="form-control" disabled> 
-								  <option value="volvo">A6 Allroad</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Поколение:</p>
-								<select class="form-control">
-								  <option value="volvo">2008 – 2012 C6 рестайл</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<p>Тип кузова:</p>
-								<select class="form-control">
-								  <option value="volvo">Не выбрано</option>
-								  <option value="saab">Saab</option>
-								  <option value="opel">Opel</option>
-								  <option value="audi">Audi</option>
-								</select>
-							</div>
-						</div>
-						<div class="select-block-bg">
-							<div class="check-box-container">
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check15" ><label for="check15">Лобовое стекло</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check1"><label for="check1">Датчики дождя / света</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check2"><label for="check2">Места под датчики</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check3"><label for="check3">Камеры</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check4"><label for="check4">Обогрев</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check5"><label for="check5">Антенна</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check6"><label for="check6">Окнопод VIN</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check16" ><label for="check16">Заднее стекло</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check7"><label for="check7" >Обогрев</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check8"><label for="check8" >Антенна</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 ">
-									<ul>
-										<li><input type="checkbox" name="browser" value="ie" id="check17" ><label for="check17">Боковые стекла</label></li>
-										<div class="select-block-devider"></div>
-										<li><input type="checkbox" name="browser" value="ie" id="check9"><label for="check9" >Опускные</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check10"><label for="check10" >Корпусные</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check11"><label for="check11">Переднее</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check12"><label for="check12">Заднее</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check13"><label for="check13">Левое</label></li>
-										<li><input type="checkbox" name="browser" value="ie" id="check14"><label for="check14">Правое</label></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-sm-12 "><ul>
-										<li><br></li>
-										<div class="select-block-devider"></div>
-										<li></li>
-										
-									</ul></div>
-								
-							</div>
-							
-						</div>
-						<div class="col-md-12">
-									<a href="#" class="m-page-btn btn-padding-left">Подобрать</a>
-								</div>
-					</div>
-
-					<div class="clearfix"></div>
-				</section>
-
-
-				<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">подбор автостекол</h2>
-						<div class="row">
-  <div class="btn-group btn-group-justified">
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car-tablet">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car">
-      <div class="col-sm-12 "><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="btn-group btn-group-justified">
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car-tablet">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-    <div class="btn-group last-car">
-      <div class="col-sm-12"><a href="#" class="cat-window"><img src="i/car1.png" alt="car">
-      <p>toyota</p><img src="i/border.png" alt="as" class="border-absolute"></a></div>
-    </div>
-  </div>
-</div>
-<div class="cat-btn-container">
-	<a href="#" class="cat-btn">Весь каталог</a>
-</div>
-					</div>
-				</section>
-
-
-<section class="section v1_mod">
-	<div class="container">
-		<div class="col-md-6 m-page-change">
-			<img src="i/broken-glass.png" alt="broken-glass">
-			<h3>ЗАМЕНА</h3>
-		</div>
-		<div class="col-md-6 m-page-repair">
-			<div class="repair-content">
-				<img src="i/split-glass.png" alt="split glass">
-				<h3>РЕМОНТ</h3>
-				<p>
-					Carglass® использует инновационное оборудование и современные высокопрочные полимеры, применяемые Carglass® во всем мире. <br><br>
-
-Полное восстановление структурной прочности стекла гарантирует безопасность вождения транспортного средства.<br><br>
-
-Полимерный состав, используемый для ремонта автостекла, имеет одинаковый с ним коэффициент преломления. Благодаря тщательной полировке зона ремонта практически незаметна.
-				</p>
-				<div class="repait-content__btn">
-					<a href="#">Подробнее</a>
+					window.vkAsyncInit = function(){
+						VK.init({apiId: 3363525, onlyWidgets: true});
+						VK.Widgets.Like("vk_like", {type: "button", height: 20});
+					};
+				})();
+			</script>
+			<script>
+				(function() {
+					function async_load(u,id) {
+						if (!gid(id)) {
+							s="script", d=document,
+							o = d.createElement(s);
+							o.type = 'text/javascript';
+								o.id = id;
+							o.async = true;
+							o.src = u;
+							// Creating scripts on page
+							x = d.getElementsByTagName(s)[0];
+							x.parentNode.insertBefore(o,x);
+						}
+					}
+					function gid (id){
+						return document.getElementById(id);
+					}
+					window.onload = function() {
+					
+						e = gid("s-facebook");
+						e.setAttribute("data-layout", "button_count"); 
+						e.setAttribute("data-send", "false"); 
+					
+						async_load("//connect.facebook.net/ru_RU/all.js#xfbml=1", "id-facebook");
+						async_load("//vk.com/js/api/openapi.js", "id-vkontakte");
+					};
+				
+					window.vkAsyncInit = function(){
+						VK.init({apiId: 3363525, onlyWidgets: true});
+						VK.Widgets.Like("vk_like", {type: "button", height: 20});
+					};
+				})();
+			</script>
+			<main class="main">
+				<div class="container">
+					<ul class="breadcrumbs_list">
+						<li class="breadcrumbs_item"><a href="" class="breadcrumbs_link">Главная</a></li>
+						<li class="breadcrumbs_item"><a href="" class="breadcrumbs_link">Блог</a></li>
+						<li class="breadcrumbs_item"><span class="breadcrumbs_link">Заголовок статьи: статьи заголовок</span></li>
+					</ul>
+					<article class="post">
+						<h1 class="headline">Заголовок статьи: статьи заголовок</h1>
+						<section class="section_post">
+							<div class="post_annotation">Сколы по периметру недопустимы сколы по периметру недопустимы</div>
+							<figure class="fig_post"><a href="" class="fig_p_img_w"><img src="i/blog/blog_post_img_1.jpg" alt="" class="fig_p_img"></a>
+								<figcaption class="fig_p_caption">Сколы по периметру недопустимы сколы по периметру недопустимы</figcaption>
+							</figure>
+							<p>Колумбийский аспирант-биолог Диего Гомес (Diego Gómez) <span class="highlight_yellow">шесть лет назад решил опубликовать тезисы к чужой статье</span>, материалы которой ему понравились. Он сделал тезисы, решив поделиться ими с другими людьми на сервисе публикации различных документов Scribd. Вскоре после размещения публикации администрация сервиса поменяла правила, предложив незарегистрированным пользователям оплачивать $5 за загрузку любого материала.</p>
+							<p>Когда Гомес узнал об изменениях в правилах Scribd, <span class="highlight_yellow">он убрал документ с сервиса</span>. Но автор статьи увидел тезисы к своему материалу раньше, и, решив, что биолог решил заработать денег на чужой интеллектуальной собственности, подал иск в суд, после чего Гомесу были предъявлены обвинения в нарушении авторского права.</p>
+							<h2>Подзаголовок в теле. Мягко говоря, в теле... надо бы ему скинуть лишний weight?</h2>
+							<p>Сфера интересов Диего достаточно широка. Он изучает биоразнообразие региона, разрабатывая методы, позволяющие сохранить находящиеся под угрозой вымирания виды животных и растений из Южной Америки. Также колумбиец старается пополнять свои знания в указанной сфере, но вот беда — большинство качественных научных работ доступны лишь за деньги в специализированных научных журналах. </p>
+							<p>Его университет не может позволить себе дорогую подписку на известные научные журналы, так что приходится обходиться своими силами. Молодой ученый покупает нужные материалы за свои деньги, причем иногда Гомесу приходится отказываться от научных экспедиций, с тем, чтобы сэкономить средства научную литературу. Основные материалы для своей работы он получает в библиотеках и открытых архивах научной литературы.</p>
+							<aside class="blog_post_thought">
+								<p>Так, как мы танцевали лезгинку — юноши и девушки вместе, динамично, с акробатикой, — теперь уже не танцуют</p>
+							</aside>
+							<p>С течением времени <span class="highlight_yellow">Гомес начал более активно работать</span> в Cети, где есть большое количество публикаций по интересующей его тематике, плюс сеть дает возможность связываться с коллегами. Иногда аспиранту попадаются и открытые публикации, которые выкладываются в сеть учеными, которые понимают, что научная литература должна находиться в свободном доступе. Если пользоваться такими статьями, нужно лишь выполнять обычные обязательства — указывать источник со всеми необходимыми деталями.</p>
+							<p>В 2011-м году Гомесу попалась очень ценная для него публикация. Аспирант, недолго думая, составил тезисы и выложил их на Scribd, надеясь, что эти материалы пригодятся его коллегам. Но другой ученый, автор самой статьи, решил, что колумбийский аспирант хочет получить деньги, выдавая чужую публикацию за свою и подал иск в суд. Автор, о котором идет речь — американец. А между Колумбией и США действует специальное соглашение, которое позволяет наказывать нарушителей авторского права, даже в том случае, если нарушитель из другой страны. </p>
+							<p>Гомесу повезло в том, что за его защиту в суде взялась юридическое объединение Fundación Karisma. Эта организация постаралась доказать невиновность Гомеса, в чем и преуспела. Стоит отметить, что в Колумбии нет развернутого закона об авторском праве. Там действует устаревший закон о правах авторов. Этот закон и связанные с ним документы появились более 20 лет назад. Они оговаривают ряд специфических ситуаций, которые очень редко встречаются в наше время, а к интернету и вовсе неприменимы. Тем не менее, часть этих законов была использована в суде против Гомеса. </p>
+							<p>К счастью для него, адвокаты сумели доказать, что при выкладывании тезисов статьи у Гомеса не было злого умысла. Кроме того, есть еще один важный нюанс — тем же юристам удалось доказать, что автору публикации не был нанесён ущерб. Как уже говорилось выше, материал был выложен изначально на Scribd, когда там еще не требовалось платить деньги за загрузку материала.</p>
+						</section>
+					</article>
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section v1_mod">
-	<div class="container">
-		<h2 class="headline v3_mod black_mod block-tittle">Отзывы наших клиентов</h2>
-		<div style="height: 280px;" class="container">
-			
-						<script type="text/javascript" src="//dev.mneniya.pro/js/carglassru/mneniyafeed.js"></script>
-						<div class="col-md-3 hidden-sm hidden-xs"><img src="i/Paul_Heroes_Pose_01.png" alt=""></div>
-						<div id="mneniyapro_feed" class="col-md-9 col-sm-12" style="height: 230px !important;overflow: hidden;"><a href="http://mneniya.pro/">Mneniya.Pro</a></div>
-
-					</div>
-<center><a href="/otzyvy" class="otzyvy-btn-link" style="font-size: 1.3em;line-height: 2em;" class="btn">Посмотреть все отзывы</a></center>
-					<div class="clearfix"></div>
-	</div>
-</section>
-
-
-<section class="section v1_mod">
-	<div class="container">
-		<h2 class="headline v3_mod black_mod block-tittle">Некоторые из наших преимуществ</h2>
-		<div class="benefit-center">
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Временное ПВХ-стекло</p>
-				<div class="benefits-text">Если на складе не оказалось нужной модели бокового стекла, установка временного ПВХ-стекла выполняется в день подачи заявки.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><i class="material-icons">account_balance</i></div>
-				<p class="benefits-tittle">Гарантия</p>
-				<div class="benefits-text">Ремонт и замена стекла в автосервисе Carglass® не влияют на условия гарантии производителя авто.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items without-margin">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Пользуйтесь авто через час</p>
-				<div class="benefits-text">Замена автостекла выполняется по европейской технологии с помощью «одночасового» клея. Через час после замены Вы уже можете пользоваться автомобилем.</div>
-			</div>
-		
-
-			<div class="col-md-4 col-sm-6 col-xs-12  benefits__items">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Эксклюзивость</p>
-				<div class="benefits-text">Эксклюзивные технологии и оборудование Carglass®</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items">
-				<div class="benefits-icon"><i class="material-icons">account_balance</i></div>
-				<p class="benefits-tittle">Ремонт за 30 минут</p>
-				<div class="benefits-text">Ремонт скола лобового стекла выполняется в день обращения за 30 минут.</div>
-			</div>
-			<div class="col-md-4  col-sm-6 col-xs-12 benefits__items without-margin">
-				<div class="benefits-icon"><img src="i/benefits-icon-1.png" alt="icon"></div>
-				<p class="benefits-tittle">Качество</p>
-				<div class="benefits-text">На выполненные работы предоставляется 10 лет гарантии.</div>
-			</div>
-		
-	</div>
-	</div>
-</section>
-
-<section class="section v2_mod">
-					<div class="container">
-						<ul class="about_us_list">
-							<li class="about_us_l_item video_mod">
-								<div id="showVideo" class="about_us_l_block video_mod"><img src="i/about_us.jpg" alt="" class="about_us_i"></div>
-							</li>
-
-							<li class="about_us_l_item">
-								<div class="about_us_l_block desc_mod">
-									<h1 class="video-tittle">Carglass <sup>®</sup></h1>
-									<p>Мы успешная компания, оказывающая высокопрофессиональные услуги по ремонту и замене автостекол для всех моделей и марок современных автомобилей в 34 странах мира. В наших сервисных центрах по всему миру работают свыше 25 000 сотрудников. Являясь подразделением Belron® Group – мирового лидера в сфере ремонта и замены автомобильных стекол, мы ежегодно обслуживаем более 10 миллионов клиентов. Мы пришли в Россию с целью стать «естественным выбором №1».</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Примеры выполненных работ</h2>
-						<ul class="portfolio_list">
-							<li class="portfolio_l_item v1_mod stamp stamp_v1_mod">
-								<div class="portfolio_block"><img src="i/portfolio/13.jpg" alt="" class="portfolio_i"></div>
-							</li>
-							<li class="portfolio_l_item v2_mod">
-								<div class="portfolio_block"><img src="i/portfolio/81.jpg" alt="" class="portfolio_i"></div>
-							</li>
-							<li class="portfolio_l_item v1_mod stamp stamp_v2_mod">
-								<div class="portfolio_block"><img src="i/portfolio/63.jpg" alt="" class="portfolio_i"></div>
-							</li>
-							<li class="portfolio_l_item v1_mod">
-								<div class="portfolio_block"><img src="i/portfolio/48.jpg" alt="" class="portfolio_i"></div>
-							</li>
-							<li class="portfolio_l_item v1_mod">
-								<div class="portfolio_block"><img src="i/portfolio/33.jpg" alt="" class="portfolio_i"></div>
-							</li>
-							<li class="portfolio_l_item v3_mod">
-								<div class="portfolio_block v1_mod"><img src="i/portfolio/36_prev.jpg" alt="" class="portfolio_i"></div>
-							</li>
-						</ul>
-						<div class="btn_group_list v1_mod repait-content__btn"><a href="" ><span>Найти ближайший центр</span></a></div>
-						<div id="modalPortfolio" class="lightbox center_mod">
-							<div class="swiper-container portfolio_container">
-								<div class="portfolio_lightbox_list swiper-wrapper">
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/13.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/81.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/33.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/63.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/48.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-									<div class="portfolio_lightbox_l_item swiper-slide">
-										<div class="portfolio_lightbox_block"><img src="i/portfolio/36.jpg" alt="" class="portfolio_i">
-											<div class="portfolio_lbox_b_caption">
-												<div class="portfolio_lbox_b_title">Название нашей работы</div>
-												<div class="portfolio_lbox_b_text">Равным образом рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="portfolio_thumb_container swiper-container gallery-thumbs">
-								<div class="portfolio_thumb_list swiper-wrapper">
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/13.jpg" alt="" class="portfolio_thumb_l_i"></div>
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/81.jpg" alt="" class="portfolio_thumb_l_i"></div>
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/33.jpg" alt="" class="portfolio_thumb_l_i"></div>
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/63.jpg" alt="" class="portfolio_thumb_l_i"></div>
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/48.jpg" alt="" class="portfolio_thumb_l_i"></div>
-									<div class="portfolio_thumb_l_item swiper-slide"><img src="i/portfolio/36.jpg" alt="" class="portfolio_thumb_l_i"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-		<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">ПОПУЛЯРНЫЕ БРЕНДЫ АВТОСТЕКОЛ</h2>
-						<div class="glass-brends-1">
-							<div class="col-md-2 сol-sm-3"><a href="#">AGC </a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">Nippon Glass</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">FYG</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">GUARDIAN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">PILKINGTON</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">SEKURIT SAINT-GOBAIN</a></div>
-						</div>
-						<div class="glass-brends-2">
-							<div class="col-md-2 сol-sm-3"><a href="#">GUARDIAN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">SEKURIT SAINT-GOBAIN</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">PILKINGTON</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">AGC</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">FYG</a></div>
-							<div class="col-md-2 сol-sm-3"><a href="#">Nippon Glass</a></div>
-						</div>
-					</div>
-		</section>
-
-
-
-<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Новости</h2>
-						<div class="news_msnry_wrap">
-							<ul class="news_msnry_list">
-								<li class="news_msnry_l_item v1_mod"><a href="" class="news_msnry_block v1_mod blue_mod">
-										<div class="news_msnry_b_date">
-											<div class="news_msnry_b_d_day">27</div>
-											<div class="news_msnry_b_d_month">мая,</div>
-											<div class="news_msnry_b_d_year">2017</div>
-										</div>
-										<div class="news_msnry_b_cat default_mod">Главное</div>
-										<div class="news_msnry_b_title">Завершены холодные испытания комплекса по обращению с твердыми радиоактивными отходами</div>
-										<div class="btn btn_readmore btn_yellow_mod"><span>Подробнее</span></div></a></li>
-								<li class="news_msnry_l_item v3_mod"><a href="" class="news_msnry_block orange_mod">
-										<div class="news_msnry_b_date">
-											<div class="news_msnry_b_d_day">16</div>
-											<div class="news_msnry_b_d_month">мая,</div>
-											<div class="news_msnry_b_d_year">2017</div>
-										</div>
-										<div class="news_msnry_b_cat orange_mod">Новости</div>
-										<div class="news_msnry_b_title">Сработали под ключ</div>
-										<div class="btn btn_readmore btn_yellow_mod"><span>Подробнее</span></div></a></li>
-								<li class="news_msnry_l_item v2_mod"><a href="" class="news_msnry_block gray_mod">
-										<div class="news_msnry_b_date">
-											<div class="news_msnry_b_d_day">16</div>
-											<div class="news_msnry_b_d_month">мая,</div>
-											<div class="news_msnry_b_d_year">2017</div>
-										</div>
-										<div class="news_msnry_b_cat gray_mod">Новость дня</div>
-										<div class="news_msnry_b_title">Завершены холодные испытания комплекса по обращению с твердыми радиоактивными отходами</div>
-										<div class="btn btn_readmore btn_yellow_mod"><span>Подробнее</span></div></a></li>
-								<li class="news_msnry_l_item v2_mod"><a href="" class="news_msnry_block green_mod">
-										<div class="news_msnry_b_date">
-											<div class="news_msnry_b_d_day">16</div>
-											<div class="news_msnry_b_d_month">мая,</div>
-											<div class="news_msnry_b_d_year">2017</div>
-										</div>
-										<div class="news_msnry_b_cat default_mod">Новости</div>
-										<div class="news_msnry_b_title">Завершены холодные испытания комплекса по обращению с твердыми радиоактивными отходами</div>
-										<div class="btn btn_readmore btn_yellow_mod"><span>Подробнее</span></div></a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="section v1_mod">
-					<div class="container">
-						<h2 class="headline v3_mod black_mod block-tittle">Мы всегда рады помочь Вам</h2>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">ДТП</p>
-								<p class="rdy-help-text">Вы попали в ДТП, и лобовое стекло автомобиля пострадало.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Некачественное
-дорожное покрытие</p>
-								<p class="rdy-help-text">Лобовое стекло Вашего автомобиля пострадало от некачественного дорожного покрытия: на лобовом стекле Вашего автомобиля образовался скол или трещина. Мы произведем ремонт скола лобового стекла в день обращения.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Хулиганство</p>
-								<p class="rdy-help-text">Ваш автомобиль подвергся хулиганскому нападению: специалисты Carglass® заменят боковое стекло Вашего автомобиля или предложат установить «временное стекло» из ПВХ в день обращения. У нас возможна установка стекол на автомобили всех марок.</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-6 ">
-							<div class="rdy-help">
-								<p class="rdy-help__tittle">Некачественный ремонт</p>
-								<p class="rdy-help-text">Вы попытались самостоятельно отремонтировать или заменить стекло автомобиля и не добились желаемого результата.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			</main>
+			<section class="section">
+				<div class="container">
+					<div class="share_post_block">
+						<h6 class="shr_p_b_hline">Рассказать друзьям</h6>
+						<div class="shr_p_row">
+							<div class="social_links_outer">
+								<ul class="social_share_list">
+									<li class="social_share_item">
+										<div id="s-facebook" class="fb-like"></div>
+									</li>
+									<li class="social_share_item">
+										<div id="vk_like"></div>
+									</li>
+								</ul>
+							</div><a href="" class="btn btn_comm_num btn_yellow_mod"> <span>12 комментариев</span></a>
+						</div>
+						<form action="" method="post" class="form subscribe_mod">
+							<div class="form_hline share_mod">Подписаться на еженедельную рассылку</div>
+							<dl class="form_cell form_cell_v1_mod">
+								<dt class="form_c_hline hide_mod">
+									<label for="subscribe_email">Email</label>
+								</dt>
+								<dd class="form_c_f_w form_v2_mod">
+									<input id="subscribe_email" type="email" name="subscribe_email" placeholder="Ваш e-mail" class="f_c_field default_mod"><span class="error_alert v1_mod"></span>
+								</dd>
+							</dl>
+							<button type="submit" class="btn btn_yellow_mod"><span>Подписаться</span></button>
+						</form>
+					</div>
+				</div>
+			</section>
 			<footer class="footer">
 				<div class="footer_row v1_mod">
 					<div class="footer_content v1_mod container">
@@ -1035,13 +614,6 @@
 					</div>
 				</div>
 			</footer>
-			<div id="modalVideo" class="lightbox v2_mod">
-				<div class="modal_window v3_mod"><span class="modal_close video_mod"></span>
-					<div class="videoWrapper">
-						<iframe id="aboutUsVideo" width="560" height="315" src="https://www.youtube.com/embed/26yf_1_mv9A?wmode=opaque&amp;amp;rel=0&amp;amp;autohide=1&amp;amp;showinfo=0&amp;amp;wmode=transparent" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 		
