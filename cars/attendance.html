@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CARGLASS. Услуги</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Content">
+		<meta name="format-detection" content="telephone=no">
+		<script>
+			function loadFont(a,b,c,d){function e(){if(!window.FontFace)return!1;var a=new FontFace("t",'url("data:application/font-woff2,") format("woff2")',{}),b=a.load();try{b.then(null,function(){})}catch(c){}return"loading"===a.status}var f=navigator.userAgent,g=!window.addEventListener||f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!f.match(/Chrome/);if(!g){var h={};try{h=localStorage||{}}catch(i){}var j="x-font-"+a,k=j+"url",l=j+"css",m=h[k],n=h[l],o=document.createElement("style");if(o.rel="stylesheet",document.head.appendChild(o),!n||m!==b&&m!==c){var p=c&&e()?c:b,q=new XMLHttpRequest;q.open("GET",p),q.onload=function(){q.status>=200&&q.status<400&&(h[k]=p,h[l]=q.responseText,d||(o.textContent=q.responseText))},q.send()}else o.textContent=n}}
+			loadFont('OpenSans', 'fonts/OpenSans.css');
+			loadFont('OpenSans', 'fonts/OpenSans-Bold.css');
+			loadFont('OpenSans', 'fonts/opensans-italic.css');
+			loadFont('OpenSans', 'fonts/OpenSans-Light.css');
+			loadFont('OpenSans', 'fonts/avenirnextcyr-ultralight.css');
+			loadFont('OpenSans', 'fonts/avenirnextcyr-light.css');
+			loadFont('OpenSans', 'fonts/OpenSans-Semibold.css');
+		</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      	<link rel="stylesheet" href="css/select.css">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body class="body" >
+		<div id="wrapper" class="wrapper">
+			<header class="header">
+				<div class="header_row top_mod container">
+					<div class="logo_block header_mod"><a href="" class="logo_w default_mod header_mod"><img src="i/logo.svg" alt="Carglass — ремонт и замена автостекол" class="logo_i"></a>
+						<!-- <div class="logo_slogan header_mod">ремонт и замена автостекол</div> -->
+					</div>
+					<script src="js/jquery.js"></script>
+					<script>$.getJSON('//dev.mneniya.pro/jsonp_api.php?callback=?',{customerID:'F5E79E07-ADAF-D923-1A78-0D4D275900A8', productUID : 'mpallfeeds'},function(jsondata){$('.api-review').html(jsondata[0].AverageRate+' Отзывы'); });</script>
+					<div class="rating default_mod"></div>
+					<div class="office_nearest_block">
+						<span class="header-5-star"><a href="#" ><span class="office_another">4.7 Отзывы</span></a> </span>
+						<a href=""  class="office_nearest"><i class="fa fa-map-marker header__phone-icon" aria-hidden="true"></i>центры в Санкт-Петербурге<span class="office_num">(3)</span></a><a href="" class="office_another">Другой</a></div><i class="fa fa-phone header__phone-icon" aria-hidden="true"></i><a href="tel:88005554843" class="phone header_mod link link_sub_mod">8 800 555 48 43</a><a href="" class="btn btn_small_mod btn_callback btn_yellow_mod btn_color_black"> <span>Перезвонить</span></a>
+					<span class="header__search_icon"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></span>
+					<span class="header__search_user"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+					<span class="header__search_heart"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></span>
+				</div>
+				<div class="header_row bottom_mod">
+					<div class="header_content bottom_mod container"><span class="mobile_toggle"><i class="mobile_t_icon"></i></span>
+						<div class="nav_search_block">
+							<nav class="menu_nav">
+
+								<ul class="menu_list">
+									<li class="write-to-service-btn"><a href="#">Запись на сервис</a></li>
+									<li class="menu_l_item"><a href="" class="menu_l_link">Замена автостекол </a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu_l_item"><a href="" class="menu_l_link">Ремонт автостекол</a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu_l_item"><a href="" class="menu_l_link">Адреса центров</a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu_l_item"><a href="" class="menu_l_link">Отзывы</a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+											<li class="submenu_l_item"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu_l_item"><a href="" class="menu_l_link">Дополнительные услуги</a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu_l_item without-margin"><a href="" class="menu_l_link"> О компании</a>
+										<ul data-collapsed="true" style="height: 0px" class="submenu_list">
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="submenu_l_item dropdown_mod"><a href="" class="submenu_l_link li_mod"><span class="submenu_l_link_text">Подпункт</span></a>
+												<ul data-collapsed="true" style="height: 0px" class="submenu-inside_list">
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+													<li class="submenu-i_l_item"><a href="" class="submenu-i_l_link"><span class="submenu-i_l_link_text">Подподпункт</span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+							<div class="pers_account_block"><span class="tooltip bottom_mod account_mod">Личный кабинет</span></div>
+							<div class="search_block"><span class="search_placeholder">Поиск по сайту</span>
+								<form  method="get" data-collapsed="true" style="height: 0px" class="form search_mod">
+									
+									
+									<dl class="form_cell form_cell_v1_mod search_mod">
+										<dt class="form_c_hline form_v1_mod hide_mod">
+											<label for="#search">Поиск на сайте</label>
+										</dt>
+										<dd class="form_c_f_w form_v1_mod">
+											<input type="text" id="#search" placeholder="" class="f_c_field default_mod search_mod "/>
+										</dd>
+									</dl>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				
+
+<section class="section v1_mod">
+	<div class="container">
+		<h2 class="headline v3_mod black_mod block-tittle">Услуги</h2>
+
+		<a href="#" class="attend-main-link">
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-fix-height attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-1.jpg" alt="car"  >
+			</div>
+
+		
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-right attend-padding-fix">
+				<h4>
+					Нанесение Антидождь
+				</h4>
+				<p>
+					Для всех наших клиентов Carglass® осуществляет услугу "Обработка стекол водоотталкивающим покрытием"
+				</p>
+			</div>
+		</a>
+
+		<a href="#" class="attend-main-link">
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-left attend-padding-fix">
+				<h4>
+					Калибровка камеры ADAS
+				</h4>
+				<p>
+					Carglass® осуществляет услугу по калибровке камеры вспомогательных систем автомобиля ADAS, которая находится под лобовым стеклом. 
+				</p>
+			</div>
+
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-2.jpg" alt="car" >
+			</div>
+
+		
+			
+		</a>
+
+
+
+
+		<a href="#" class="attend-main-link">
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-fix-height attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-3.jpg" alt="car" >
+			</div>
+
+		
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-right attend-padding-fix">
+				<h4>
+					Временное стекло
+				</h4>
+				<p>
+					Разбили боковое или заднее стекло, а новое можно купить только под заказ? Есть отличное решение! 
+				</p>
+			</div>
+		</a>
+
+		<a href="#" class="attend-main-link">
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-left attend-padding-fix">
+				<h4>
+					Полировка фар
+				</h4>
+				<p>
+					Carglass® осуществляет услугу по калибровке камеры вспомогательных систем автомобиля ADAS, которая находится под лобовым стеклом. 
+				</p>
+			</div>
+
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-4.jpg" alt="car" >
+			</div>
+
+		
+			
+		</a>
+
+
+
+
+
+		<a href="#" class="attend-main-link">
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-fix-height attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-5.jpg" alt="car" >
+			</div>
+
+		
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-right attend-padding-fix">
+				<h4>
+					Корпоративным клиентам
+				</h4>
+				<p>
+					Установка автостекла с собственного склада на территории Вашего автопарка. 
+				</p>
+			</div>
+		</a>
+
+		<a href="#" class="attend-main-link">
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-text-left attend-padding-fix">
+				<h4>
+					Ремонт трещин
+				</h4>
+				<p>
+					Серьезные дефекты триплекса ухудшают обзор, снижают уровень комфорта вождения, повышают риски, поэтому требуют немедленной замены.
+				</p>
+			</div>
+
+
+			<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 attend-padding-fix attend-img-fix attend-hidden-phone">
+				<img src="i/attend-6.jpg" alt="car" >
+			</div>
+
+		
+			
+		</a>
+		
+	</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</main>
+			</div>
+			<footer class="footer">
+				<div class="footer_row v1_mod">
+					<div class="footer_content v1_mod container">
+						<div class="phone_block v1_mod"><a href="tel:88005554843" class="phone footer_mod link link_sub_mod">8 800 555 48 43</a>
+							<div class="phone_b_text">Для звонков по России</div>
+						</div><a href="" class="btn btn_yellow_mod"><span>Перезвонить</span></a>
+						<ul class="social_list_v1">
+							<li class="social_l_item_v1"><a href="" class="social_l_link_v1 vk_mod">
+								<i class="fa fa-vk" aria-hidden="true"></i>
+							</a></li>
+							<li class="social_l_item_v1"><a href="" class="social_l_link_v1 fb_mod">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a></li>
+							<li class="social_l_item_v1"><a href="" class="social_l_link_v1 youtube_mod">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+							</a></li>
+							<li class="social_l_item_v1"><a href="" class="social_l_link_v1 instagram_mod">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_row v2_mod">
+					<div class="footer_content v2_mod container">
+						<nav class="nav_footer v1_mod">
+							<p class="nav-footer-tittle">Замена автостекол</p>
+							<ul class="footer_menu_list v1_mod">
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена стекла по КАСКО</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена стекла по ОСАГО</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена стекла автомобиля по марке</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена лобового стекла</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена бокового стекла</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Замена заднего стекла</span></a></li>
+								<li class="footer_menu_l_item v1_mod"><a href="" class="footer_menu_l_link v1_mod"><span>Установка автостекол</span></a></li>
+								
+							</ul>
+						</nav>
+						<nav class="nav_footer v2_mod">
+							<p class="nav-footer-tittle">Замена автостекол</p>
+							<ul class="footer_menu_list v2_mod">
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Ремонт лобового стекла</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Ремонт сколов</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Ремонт трещин</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Licence agreement</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Автостекла по производителям</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Автостекла по моделям автомобилей</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Гарантия на ремонт скола</span></a></li>
+							</ul>
+						</nav>
+						<nav class="nav_footer v2_mod">
+							<p class="nav-footer-tittle">О компании</p>
+							<ul class="footer_menu_list v2_mod">
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Адреса центров</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Fleet service</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Авторизация для партнеров</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Блог</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Вакансии</span></a></li>
+								<li class="footer_menu_l_item v2_mod"><a href="" class="footer_menu_l_link v2_mod"><span>Best of Belron</span></a></li>
+								
+							</ul>
+						</nav>
+						<div class="find_closest_map_block">
+							<p class="nav-footer-tittle footer-last-block"><a href="#">Обратная связь</a></a></p>
+							<p class="nav-footer-tittle footer-last-block"><a href="#">Контакты</a></p>
+							<p class="nav-footer-tittle footer-last-block"><a href="#">Пресса о нас</a></p>
+							<p class="nav-footer-tittle footer-last-block footer-item-border"><a href="#">Карта сайта</a></p>
+							<p class="payment-info">
+								Возможность оплаты картой <br>
+на сервисных центрах
+							</p>
+							<p class="footer-payment-cards">
+								<a href="#"><img src="i/mastercard-logo.png" alt="mastercard"></a>
+								<a href="#"><img src="i/visa_mastercard.png" alt="visa"></a>
+								<a href="#"><img src="i/mir-logo.png" alt=""></a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer_row v3_mod">
+					<div class="footer_content v3_mod container">
+						<div class="logo_block footer_mod"><a href="" class="logo_w default_mod"><img src="i/logo-black-white.png" alt="Carglass — ремонт и замена автостекол" class="logo_i"></a>
+							
+						</div>
+						<p class="footer-last-row-info">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Правовая информация</a>
+						<a href="#">Обработка персональных данных</a>
+						<a href="#">Способы оплаты</a>
+						</p>
+						<div class="footer_info_block">
+							<div class="footer_info_text">ООО «Каргласс» 117312,</div>
+							<div class="footer_info_text">г. Москва, ул. Вавилова, 13А</div>
+							<div class="footer_info_text">ИНН 7736621120, КПП 773601001</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div id="modalVideo" class="lightbox v2_mod">
+				<div class="modal_window v3_mod"><span class="modal_close video_mod"></span>
+					<div class="videoWrapper">
+						<iframe id="aboutUsVideo" width="560" height="315" src="https://www.youtube.com/embed/26yf_1_mv9A?wmode=opaque&amp;amp;rel=0&amp;amp;autohide=1&amp;amp;showinfo=0&amp;amp;wmode=transparent"  allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/ab766e7166.js"></script>
+		<script src="js/main.js" async></script>
+		<script src="js/form_damage.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+	</body>
+</html>

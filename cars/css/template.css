@@ -1,0 +1,73 @@
+﻿body {
+	margin:0;
+	text-align:center;
+}
+
+	body .slider {
+		overflow:hidden; /* Скрываем всё что за блоком слайдера */
+		position:relative;
+		width:800px;
+		height:500px;
+		margin:0 auto;
+	}
+	
+		body .slider .slides {
+			position:relative;
+			transition:1s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+		}
+		
+			body .slider .slides .slide {
+				float:left;
+				display:block;
+			}
+			
+			body .slider .slides .slide img{
+				width:800px;
+				height:500px;
+			}
+			
+		body .slider .next {
+			position:absolute;
+			height:50px;
+			width:50px;
+			background:#009900;
+			right:0;
+			top:225px;
+			z-index:1;
+			cursor:pointer;
+		}
+		
+		body .slider .prev {
+			position:absolute;
+			height:50px;
+			width:50px;
+			background:#009900;
+			left:0;
+			top:225px;
+			z-index:1;
+			cursor:pointer;
+		}
+		
+	body .slider .navigation {
+		position:absolute;
+		width:100%;
+		bottom:40px;
+		left:0;
+		z-index:1;
+		cursor:pointer;
+	}
+	
+		body .slider .navigation .dot{
+			display:inline-block;
+			width:16px;
+			height:16px;
+			background:#666666;
+			cursor:pointer;
+			border-radius:16px;
+			margin:0 20px;
+			border:1px solid #666666;
+		}
+		
+		body .slider .navigation .active{
+			background:#fff;
+		}
