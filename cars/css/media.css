@@ -211,16 +211,76 @@
   .blog-post-name a {
     font-size: 24px; }
   .headline.v3_mod {
-    font-size: 28px;
+    font-size: 28px; }
+  .m-page-repair__content p {
+    margin-bottom: 15px; }
+  .m-page-change__content p {
+    margin-bottom: 15px; }
+  .benefits__items {
+    min-height: 300px; }
+  .rdy-help {
+    height: 350px; }
+  .blog-papgination-ul li {
+    margin-right: 15px; }
+  .ekb-choose-region-ul {
+    padding-right: 0; }
+  .subst-replace p {
+    padding-left: 0; }
+  .subst-replace p span {
+    left: -30px; }
+  .services_h3_text {
+    padding: 0 10px;
+    font-size: 11px; }
+  .other-services-bg1 {
+    padding: 25px 40px;
+    height: auto; }
+  .other-services-bg2 {
+    padding: 25px 40px;
+    height: auto; }
+  .other-services-bg3 {
+    padding: 25px 40px;
+    height: auto; }
+  .subst-feedbacl-block {
+    height: auto; }
+  .how-to-change {
+    height: auto; }
+  .how-to-change h2 {
+    font-size: 25px; }
+  .subst-where-change h2 {
+    font-size: 21px; }
+  .subst-section-1-text {
+    font-size: 28px; }
+  .blog-text-popular-container-2 {
+    margin-left: 0;
     /**/ } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+  .follow-icon-mail {
+    top: 176px; }
+  .contacts-choose-city {
+    width: 75%; }
+  .solo-btn a {
+    padding: 25px 10px; }
   .btn-group {
     width: 100%;
     display: block; }
   .cat-window {
-    width: 290px;
+    width: 290px; }
+  .services_h3_text {
+    margin-bottom: 0; }
+  .bx-wrapper .bx-controls-direction a {
+    top: -6%; }
+  .container_services_more_review {
+    margin-top: 14px; }
+  .services__where-we-are-1 {
+    padding-left: 0; }
+  .services__where-we-are-2 {
+    padding-left: 0;
+    height: auto; }
+  .subs-block-number {
+    font-size: 40px;
+    line-height: 1.8;
     /**/ } }
 
 /*==========  Mobile First  ==========*/
