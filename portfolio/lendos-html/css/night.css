@@ -1,0 +1,11 @@
+
+
+body{margin: 0; padding: 0}
+ #pixie
+ {
+     position:fixed;
+     z-index: 2;
+     margin:0;
+     padding:0;
+     background-size: 100% 100%;
+     }
