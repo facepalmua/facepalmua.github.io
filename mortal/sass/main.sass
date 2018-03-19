@@ -113,17 +113,29 @@ body
 		color: #fff
 		text-decoration: none
 		transform: scale(1.1)
+	&:visited
+		text-decoration: none
+		color: #fff
+	&:active
+		text-decoration: none
+		color: #fff
+	&:focus
+		text-decoration: none
 
 
 .link-down
 	text-align: center
 	color: #383434
 	font-size: 64px
-	hover: $purple
+	position: relative
+	top: -52px
+	&:hover
+		color: $purple
+	
 
 .sect-2-div
-	width: 50%
-	float: left
+	// width: 50%
+	// float: left
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -133,8 +145,8 @@ body
 	position: relative
 
 .sect-4-div
-	width: 50%
-	float: left
+	// width: 50%
+	// float: left
 
 .about-ps
 	h2
@@ -169,12 +181,14 @@ body
 		margin-top: 40px
 		font-size: 30px
 
-
-.sect-2-div-1
+.section-2
 	background-image: url(../img/section-2.jpg)
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: top left
+
+.sect-2-div-1
+	
 	height: 600px
 
 .sect-4-div-1
@@ -189,8 +203,11 @@ body
 		display: block
 		margin: 0 auto
 
-.sect-2-div-2
+.sect-2-div-2-mod
 	background-color: #141414
+
+.sect-2-div-2
+	// background-color: #141414
 	height: 600px
 	text-align: center
 	img
