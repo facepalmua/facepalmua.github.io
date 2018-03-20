@@ -7,8 +7,19 @@ $(document).ready(function(){
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
-  dots: true
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+  }]
   });
+
   $(function() {
         $("#phone1").mask("+7(999) 999-99-99")
     })
