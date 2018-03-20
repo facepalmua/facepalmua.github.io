@@ -9,6 +9,9 @@ $(document).ready(function(){
   arrows: true,
   dots: true
   });
+  $(function() {
+        $("#phone1").mask("+7(999) 999-99-99")
+    })
 });
 
  
@@ -27,5 +30,6 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 });
+
 
 

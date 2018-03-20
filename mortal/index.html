@@ -121,10 +121,10 @@
 		<div class="form-container" id="ex1">
 			<form id="form">
 				<h3>Этот март будет жарким! </h3>
-				<input type="text" name="name" placeholder="Введите Ваше имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите Ваше имя'" required="">
-				<input type="text" name="phone" id="phone1" placeholder="Введите ваш телефон" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите ваш телефон'" required="">
-					<input type="text" name="name" placeholder="Введите Ваше имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите Ваше имя'" required="">
-				<button type="submit" class="preloader" onclick="fbq('track', 'Lead');">Записаться</button>
+				<input type="text" name="name" placeholder="Введите Ваше имя" >
+				<input type="text" name="email" id="email" placeholder="Введите ваш email" >
+				<input type="text" name="phone" id="phone1" placeholder="Введите ваш телефон" >
+				<button type="submit" class="preloader"">Записаться</button>
 			</form>
 		</div>
 <div class="clearfix"></div>
@@ -133,6 +133,39 @@
 	</section>
 
 	<script src="js/scripts.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script>
+		$("#form").validate({
+	rules: {
+		email: {
+			required: true,
+			email: true
+		},
+		name: {
+			required: true,
+			minlength: 3
+		},
+		phone: {
+			required: true,
+			minlength: 7,
+			phone: true
+		}
+	},
+	messages: {
+		email: {
+			required: 'Поле обязательно для заполнения'
+		},
+		name: {
+			required: 'Поле обязательно для заполнения'
+		},
+		phone: {
+			required: 'Поле обязательно для заполнения',
+			minlength: 'Пожалуйста, введите номер'
+		},
+	}
+ });
+	</script>
 </body>
 </html>

@@ -4,6 +4,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.first-section
+		height: 100%
+
 	/**/
 
 
@@ -14,16 +17,104 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.section-2-text-container
+		width: 100%
+		padding: 15px
+		text-align: center
+	.first-container
+		position: relative
+		img
+			width: 20%
+			margin-top: 35px
+		h1
+			font-size: 60px
+	.section-2-text-container
+		p
+			border: none
+		.main-link
+			margin: 0 auto
+	.section-2
+		.sect-2-div-2
+			display: none
+	.sect-3-img
+		img
+			position: absolute
+			top: -10px
+			width: 50%
+			left: -7%
+	.about-ps
+		h2
+			margin-top: 0
+			padding-top: 25px
+	#form
+		width: 90%
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.first-section
+		height: auto
+	.first-container
+		overflow: hidden
+		h3
+			font-size: 25px
+		h2
+			font-size: 18px
+			margin-top: -7px
+		h1
+			font-size: 36px
+		img
+			width: 45%
+			margin-top: 10px
+	.timer-container-abs
+		canvas
+			display: none
+	div#timer1d1972cf646ff8e6e47edf0aad862448
+		width: 100% !important
+	span#timer-separator-1d1972cf646ff8e6e47edf0aad862448-hours
+		width: 0 !important
+		display: none !important
+	span#timer-separator-1d1972cf646ff8e6e47edf0aad862448-minutes
+		width: 0 !important
+		display: none !important
+	.sect-3-img
+		img
+			width: 88%
+			top: -20px
+	.to-start
+		margin-bottom: 0
+		margin-top: 45px
+	.section-2-text-container
+		p
+			font-size: 16px
+	.sect-2-div-1
+		height: 370px
+	.sect-4-div-1
+		height: 370px
+	.about-ps
+		.main-link
+			display: none
+	.timer-container-abs
+		div
+			position: relative
+			left: 25px
 
+	/**/
+@media only screen and (max-width : 375px)
+	.timer-container-abs
+		div
+			position: relative
+			left: 0px
+	/**/
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
+	.timer-container-abs
+		div
+			position: relative
+			left: -20px
+
 	/**/
 
 
