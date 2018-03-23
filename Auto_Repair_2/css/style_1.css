@@ -1,7 +1,7 @@
 @charset "utf-8";
 /***************** Fonts ******************/
 @font-face {
-	font-family: 'robotobold';
+	font-family: sans-serif;
 	src: url('../fonts/roboto-bold-webfont.eot');
 	src: url('../fonts/roboto-bold-webfont_B38582A2.eot') format('embedded-opentype'),  
 	url('../fonts/roboto-bold-webfont.woff2') format('woff2'),  
@@ -12,7 +12,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: 'robotoregular';
+	font-family: sans-serif;
 	src: url('../fonts/roboto-regular-webfont.eot');
 	src: url('../fonts/roboto-regular-webfont_B38582A2.eot') format('embedded-opentype'),  
 	url('../fonts/roboto-regular-webfont.woff2') format('woff2'),  
@@ -27,11 +27,11 @@
 /******************** *Typography ***************************/
 body {
   background: #fff;
-  font-family: 'robotoregular';
+  font-family: sans-serif;
   color:#4e4e4e;
 }
 h1, h2,h3,h4,h5,h6{ 
-  font-family: 'robotobold';
+  font-family: sans-serif;
   margin:0;
 }
 h1{ font-size:45px;}
@@ -477,7 +477,7 @@ background-color: #e7430f;
   background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
   padding: 5px 20px;
   display: inline-block;
-  font-family: 'robotoregular';
+  font-family: sans-serif;
 }
 #main-slider .carousel h1 {
   background:rgba(34, 34, 34, 0.9);
@@ -486,11 +486,11 @@ background-color: #e7430f;
   font-size: 34px;
   padding: 5px 20px;
   margin-top:0;
-  font-family: 'robotoregular';
+  font-family: sans-serif;
 }
 #main-slider .carousel  strong{
   color: #fff ;
-  font-family: 'robotobold';
+  font-family: sans-serif;
 }
 #main-slider .carousel .btn-slide {
   padding:13px 50px;
@@ -1155,7 +1155,7 @@ a.fancybox .fa:focus {
   margin-bottom: 90px;
   padding: 24px;
   position: relative;
-  width: 320px;
+  width: 300px;
 }
 #testimonials .testimonial img {
   left: 19px;
