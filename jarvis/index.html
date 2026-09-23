@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS — a private personal assistant</title>
+<meta name="description" content="JARVIS is a private, single-user assistant that runs on its owner's own computer.">
+<style>
+  :root{--bg:#161826;--panel:#1c1e2c;--line:#2c2e3d;--ink:#e9e9ed;--ink-2:#b4b6c4;--accent:#b5abfc}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink-2);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 20px 80px}
+  header{display:flex;align-items:center;gap:10px;margin-bottom:40px}
+  header i{width:8px;height:8px;border-radius:50%;background:#7fb88a}
+  header b{color:var(--ink);letter-spacing:.14em;font-size:14px}
+  nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+  nav a{color:var(--ink-2);text-decoration:none}
+  nav a:hover,nav a[aria-current]{color:var(--ink)}
+  h1{color:var(--ink);font-size:30px;line-height:1.2;font-weight:600;margin:0 0 12px;text-wrap:balance}
+  h2{color:var(--ink);font-size:18px;font-weight:600;margin:36px 0 8px}
+  p,li{max-width:64ch}
+  ul{padding-left:20px}
+  a{color:var(--accent)}
+  .lede{font-size:18px;color:var(--ink-2)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:24px 0}
+  .card p{margin:0}
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--ink);font-weight:600}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:#9397ab}
+  code{background:#232532;border-radius:4px;padding:1px 5px;font-size:14px}
+</style>
+</head>
+<body><div class="wrap">
+<header><i></i><b>JARVIS</b>
+<nav><a href="./" aria-current="page">About</a><a href="privacy.html" >Privacy</a><a href="terms.html" >Terms</a></nav></header>
+<h1>A private assistant that lives on one person's computer.</h1>
+<p class="lede">JARVIS brings together its owner's calendar, meeting notes, tasks and messages so they can be searched and asked about in one place. It has exactly one user, and it runs on that user's own Mac.</p>
+<div class="card"><p><strong>Not a public service.</strong> There is no sign-up and nothing to install. The Google sign-in for JARVIS is used only by its owner, to connect his own accounts.</p></div>
+<h2>What it does with Google</h2>
+<ul>
+  <li><strong>Google Calendar (read-only):</strong> reads upcoming and recent events so the owner can see his day and ask about his meetings.</li>
+  <li><strong>Gmail (read-only):</strong> reads message headers — sender, subject, date — to show what needs a reply. It never reads message bodies, and never sends, deletes or changes anything.</li>
+</ul>
+<p>How that data is handled is in the <a href="privacy.html">privacy policy</a>.</p>
+<footer>JARVIS is a personal project by Bogdan Zakharchyshyn · Contact: <a href="mailto:facepalmua@gmail.com">facepalmua@gmail.com</a> · Last updated 23 September 2026</footer>
+</div></body></html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — JARVIS</title>
+<meta name="description" content="JARVIS is a private, single-user assistant that runs on its owner's own computer.">
+<style>
+  :root{--bg:#161826;--panel:#1c1e2c;--line:#2c2e3d;--ink:#e9e9ed;--ink-2:#b4b6c4;--accent:#b5abfc}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink-2);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 20px 80px}
+  header{display:flex;align-items:center;gap:10px;margin-bottom:40px}
+  header i{width:8px;height:8px;border-radius:50%;background:#7fb88a}
+  header b{color:var(--ink);letter-spacing:.14em;font-size:14px}
+  nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+  nav a{color:var(--ink-2);text-decoration:none}
+  nav a:hover,nav a[aria-current]{color:var(--ink)}
+  h1{color:var(--ink);font-size:30px;line-height:1.2;font-weight:600;margin:0 0 12px;text-wrap:balance}
+  h2{color:var(--ink);font-size:18px;font-weight:600;margin:36px 0 8px}
+  p,li{max-width:64ch}
+  ul{padding-left:20px}
+  a{color:var(--accent)}
+  .lede{font-size:18px;color:var(--ink-2)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:24px 0}
+  .card p{margin:0}
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--ink);font-weight:600}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:#9397ab}
+  code{background:#232532;border-radius:4px;padding:1px 5px;font-size:14px}
+</style>
+</head>
+<body><div class="wrap">
+<header><i></i><b>JARVIS</b>
+<nav><a href="./" >About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html" >Terms</a></nav></header>
+<h1>Privacy policy</h1>
+<p class="lede">JARVIS is a personal tool with one user: its owner, Bogdan Zakharchyshyn. This policy covers the data it reads from his own Google accounts.</p>
+
+<h2>What JARVIS accesses</h2>
+<table>
+  <tr><th>Google service</th><th>Access</th><th>What is read</th></tr>
+  <tr><td>Google Calendar</td><td>Read-only</td><td>Events: title, time, attendees, organiser, location and description.</td></tr>
+  <tr><td>Gmail</td><td>Read-only</td><td>Message metadata: sender, subject, date and labels. Message bodies are not requested or stored.</td></tr>
+  <tr><td>Google account</td><td>Email address</td><td>To tell the owner's two accounts apart.</td></tr>
+</table>
+<p>JARVIS cannot send email, change or delete messages, or create, edit or delete calendar events.</p>
+
+<h2>How it is used</h2>
+<p>Only to show the owner his own schedule and inbox and to answer questions he asks about them, such as "what meetings do I have today?".</p>
+
+<h2>Where it is stored</h2>
+<p>In a database on the owner's own computer. It is not uploaded to any server that JARVIS controls — JARVIS has none. Backups of that database are encrypted. Access tokens are kept in the macOS Keychain.</p>
+
+<h2>Who it is shared with</h2>
+<p>Nobody, with one exception. When the owner asks JARVIS a question, the relevant part of his own data may be sent to Anthropic's Claude to write the answer, under his own Anthropic account. It is used only to answer that question.</p>
+<p>Data from Google is never sold, never used for advertising, and never shared with anyone else.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>JARVIS's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access and data</h2>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking it stops all further reads. Deleting the local database removes everything JARVIS has stored.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:facepalmua@gmail.com">facepalmua@gmail.com</a>.</p>
+<footer>JARVIS is a personal project by Bogdan Zakharchyshyn · Contact: <a href="mailto:facepalmua@gmail.com">facepalmua@gmail.com</a> · Last updated 23 September 2026</footer>
+</div></body></html>
